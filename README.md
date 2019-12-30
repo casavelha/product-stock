@@ -1,7 +1,7 @@
 # product-stock
 
 ## Preparativos
- * crie um diretório na sua pasta home chamado *~/data* e um outro chamado *~/data/files*
+* crie um diretório na sua pasta home chamado *~/data* e um outro chamado *~/data/files*
    Exemplo:
    ```
    > cd ~
@@ -9,7 +9,7 @@
    > cd data
    > mkdir files
    ```
- * mova os arquivos de dados JSON para a pasta *~/data/files*
+* mova os arquivos de dados JSON para a pasta *~/data/files*
 (OBS: apenas os arquivos *data\*.json* serão processados)
 
 
@@ -25,10 +25,11 @@
   de distribuição que o sistema gera. Alterar isto para que o produto seja removido 
   da base após a distribuição é bem simples;
 * A carga do arquivo é feita sob demanda, para isto basta executar o seguinte comando:
-  ```
+```
 > curl -G http://localhost:8080/products/processFiles
 ```
-Criar um mecanismo *cron* ou utilizar um *quartz* para que o sistema verifique se existem 
+
+* Criar um mecanismo *cron* ou utilizar um *quartz* para que o sistema verifique se existem 
 arquivos novos para serem carregados é possível, porém para isto seria necessário primeiro fazer 
 a movimentação dos arquivos já processados para outra pasta (também é possível, mas 
 não foi possível ser feito por conta do tempo alocado para esta tarefa) 
@@ -46,7 +47,7 @@ na raiz da aplicação:
 
 #### Carregando os arquivos:
 
-  ```
+```
 > curl -G http://localhost:8080/products/processFiles
 ```
 A carga inicial leva aproximadamente 1 min. Depois disso as chamadas subsequentes fazem 
