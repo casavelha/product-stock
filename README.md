@@ -1,7 +1,7 @@
 # product-stock
 
 ## Preparativos
- * crie um diretório na sua pasta home chamado *~/data* e um chamado *~/data/files*
+ * crie um diretório na sua pasta home chamado *~/data* e um outro chamado *~/data/files*
    Exemplo:
    ```
    > cd ~
@@ -32,6 +32,9 @@ Criar um mecanismo *cron* ou utilizar um *quartz* para que o sistema verifique s
 arquivos novos para serem carregados é possível, porém para isto seria necessário primeiro fazer 
 a movimentação dos arquivos já processados para outra pasta (também é possível, mas 
 não foi possível ser feito por conta do tempo alocado para esta tarefa) 
+* Criei testes unitários apenas do acesso ao banco de dados, por limitação de tempo. 
+Como o projeto ficou divertido eu pretendo extender a cobertura de testes para mais 
+partes do código.
   
 
 ## Executando a aplicação
