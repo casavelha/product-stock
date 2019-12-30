@@ -46,7 +46,9 @@ na raiz da aplicação:
   ```
 > curl -G http://localhost:8080/products/processFiles
 ```
-A carga inicial 
+A carga inicial leva aproximadamente 1 min. Depois disso as chamadas subsequentes fazem 
+com que o sistema verifique se os registros já foram inseridos no banco, mas não altera 
+os valores caso já tenham sido gravados.
 
 
 
