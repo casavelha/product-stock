@@ -150,7 +150,7 @@ Distribuindo o produto WF para 5 lojistas:
 
 ## Abrindo o console
 Foi utilizado o banco de dados H2 com peristência em disco.
-Com a aplicaç˜åo rodando, você pode acessar o console em: *http://localhost:8080/h2-console*
+Com a aplicação rodando, você pode acessar o console em: *http://localhost:8080/h2-console*
  * usuário: sa
  * senha: password 
    
