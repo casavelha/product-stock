@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "data.files",
+  "type": "java.lang.String",
+  "description": "Source folder of product entries data files"
+}]}

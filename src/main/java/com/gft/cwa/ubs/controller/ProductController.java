@@ -6,9 +6,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.gft.cwa.ubs.bean.ProductDistribution;
 import com.gft.cwa.ubs.bean.ProductEntry;
 import com.gft.cwa.ubs.persistence.ProductEntryRepository;
 import com.gft.cwa.ubs.service.ProductEntryService;
@@ -33,6 +35,11 @@ public class ProductController {
     @RequestMapping("/products/processFiles")
     public ResponseEntity<String> processFiles() {
     	return pes.processFiles();
+    }
+    
+    @RequestMapping("/products/{name}/distribute/{lojistas}")
+    public List<ProductDistribution> distributeProduct(@PathVariable String name, @PathVariable int lojistas) {
+    	return pes.distributeProduct(name, lojistas);
     }
 
 }

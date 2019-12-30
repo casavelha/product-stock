@@ -11,10 +11,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 
 @Data
 @Entity
 @Table(name = "products")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductEntry {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
