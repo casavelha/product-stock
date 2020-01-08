@@ -1,6 +1,10 @@
 # product-stock
 
 ## Preparativos
+* Para facilitar o teste e execução do programa eu criei uma pasta *./data* na raiz do projeto já configirada para receber o banco de dados e com os arquivos .JSON já copiados.
+* Você deve excluir os arquivos product.* desta pasta se quiser que o sistema carregue novamente os dados à partir dos arquivos.
+
+#### Mudando de diretório (opcional)
 * crie um diretório na sua pasta home chamado *~/data* e um outro chamado *~/data/files*
    Exemplo:
    ```
@@ -36,6 +40,8 @@ não foi possível ser feito por conta do tempo alocado para esta tarefa)
 * Criei testes unitários apenas do acesso ao banco de dados, por limitação de tempo. 
 Como o projeto ficou divertido eu pretendo extender a cobertura de testes para mais 
 partes do código.
+* O *Parse* dos dados JSON é feito de forma *manual* utilizando **JasonParser** ao invés de **ObjectMapper**. Com isto consegui um ganho significativo de performance e consumo de memória, já que não precisamos interpretar e jogar todo o arquivo em memória logo de cara.
+
   
 
 ## Executando a aplicação
